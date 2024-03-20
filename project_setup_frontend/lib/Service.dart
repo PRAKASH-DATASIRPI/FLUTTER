@@ -18,7 +18,7 @@ class Service {
       'name': '$name',
       'email': '$email',
       'mobile': '$mobile',
-      'address': '$password',
+      'address': '$address',
     };
     //convert the above data into json
     var body = json.encode(data);
@@ -30,4 +30,3 @@ class Service {
     return response;
   }
 }
-

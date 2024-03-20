@@ -21,6 +21,8 @@ public class UserController {
 
     @PostMapping("/register")
     private ResponseEntity<String> registerUser(@RequestBody User user){
+
+        System.out.println(user);
         //save the user
         String msg = service.saveUser(user);
 
@@ -28,7 +30,7 @@ public class UserController {
     }
 
 
-
+                                                                                            
 
 
 }

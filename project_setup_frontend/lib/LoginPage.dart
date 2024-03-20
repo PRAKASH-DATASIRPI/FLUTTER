@@ -1,5 +1,5 @@
-// TODO Implement this library.
 import 'package:flutter/material.dart';
+import 'package:project_setup1/ShoppingPage.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add login functionality here
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => ShoppingPage()));
               },
               child: Text('Login'),
             ),
